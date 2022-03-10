@@ -113,7 +113,7 @@ async def on_new_chat_members(c: Client, m: Message):
     secret = secrets.token_hex(2)
 
     buttons = []
-    for x in range(2):
+    for _ in range(2):
         bogus = secrets.token_hex(2)
         buttons.append(
             InlineKeyboardButton(
